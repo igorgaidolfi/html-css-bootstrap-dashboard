@@ -24,7 +24,8 @@ header li{
     width: 75px;
     background-color: #051e34;
 }
-#sidebar .content{
+#sidebar .content,
+#main-content{
     height: calc(100vh - 75px)
 }
 #main-content{
