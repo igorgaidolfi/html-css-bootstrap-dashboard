@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <title>Bootstrap Dashboard</title>
@@ -17,7 +17,7 @@
             <img src="./img/logo.svg" alt="">
             <div class="input-group ms-3">
                 <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                <input type="text" class="form-control" placeholder="Prove a cercare: Lezioni di Laravel" aria-label="search" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Prove a cercare: Lezioni di Laravel" aria-label="search" id="basic-addon1">
             </div>
             <ul class="list-unstyled d-flex ">
                 <li><i class="fa-solid fa-list"></i></li>
@@ -71,13 +71,138 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-8">
-                            <div class="content">
+                            <div class="content-table">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Prossime classi</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">Data Inizio</th>
+                                                <th scope="col">ROI</th>
+                                                <th scope="col">Stato</th>
+                                                <th scope="col">Azioni</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row"><img src="./img/class-avatar.jpg" alt="code img">Classe 75</th>
+                                                <td>15 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img src="./img/class-avatar.jpg" alt="code img">Classe 76</th>
+                                                <td>16 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img src="./img/class-avatar.jpg" alt="code img">Classe 77</th>
+                                                <td>17 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge rounded-pill text-bg-warning text-white">process</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img src="./img/class-avatar.jpg" alt="code img">Classe 78</th>
+                                                <td>18 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img src="./img/class-avatar.jpg" alt="code img">Classe 79</th>
+                                                <td>19 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge rounded-pill text-bg-danger">failed</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img src="./img/class-avatar.jpg" alt="code img">Classe 80</th>
+                                                <td>20 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img src="./img/class-avatar.jpg" alt="code img">Classe 81</th>
+                                                <td>21 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge rounded-pill text-bg-danger">failed</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img src="./img/class-avatar.jpg" alt="code img">Classe 82</th>
+                                                <td>22 Feb 2021</td>
+                                                <td>20%</td>
+                                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
+                                            </tr>
 
+                                            </tbody>
+                                        </table>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="content-faq">
+                                <div class="card">
+                                    <div class="card-header">
+                                        Featured
+                                    </div>
+                                    <div class="card-body">
+                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="content">
-                                
+                                <div class="card">
+                                    <div class="card-header">
+                                        Featured
+                                    </div>
+                                    <div class="card-body">
+                                        
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        Featured
+                                    </div>
+                                    <div class="card-body">
+                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
