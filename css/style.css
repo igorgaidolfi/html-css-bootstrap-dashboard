@@ -18,8 +18,14 @@ header{
 #sidebar .content{
     height: 100vh;
 }
+#main-content{
+    width: calc(100vw - 75px);
+}
 @media screen and (min-width: 992px){
     #sidebar{
         width: 150px;
+    }
+    #main-content{
+        width: calc(100vw - 150px);
     }
 }
