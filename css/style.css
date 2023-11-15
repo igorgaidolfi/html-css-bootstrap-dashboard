@@ -9,20 +9,35 @@ body{
 header{
     height: 75px;
     background-color: #f8f9fa;
-    /* width: 100%; */
+    width: 100%;
+}
+.bg_grey{
+    background-color: #e5e5e5;
+}
+header li{
+    padding: 11px;
+}
+.text_orange{
+    color: #ff9003;
 }
 #sidebar{
     width: 75px;
     background-color: #051e34;
 }
 #sidebar .content{
-    height: 100vh;
+    height: calc(100vh - 75px)
 }
 #main-content{
     width: calc(100vw - 75px);
 }
 .content-table img{
     height: 20px;
+}
+.logo-mobile{
+    height: 45px;
+}
+.margint_75{
+    margin-top: 75px;    
 }
 
 @media screen and (min-width: 992px){

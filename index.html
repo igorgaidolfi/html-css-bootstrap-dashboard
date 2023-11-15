@@ -12,22 +12,22 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <!-- <header class="position-fixed z-1"> -->
-        <header class="d-flex align-items-center">
-            <img src="./img/logo.svg" alt="">
-            <div class="input-group ms-3">
-                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                <input type="text" class="form-control" placeholder="Prove a cercare: Lezioni di Laravel" aria-label="search" id="basic-addon1">
+        <header class="d-flex align-items-center position-fixed z-1">
+            <img src="./img/logo.svg" alt="boolean logo" class="ms-3 d-none d-lg-block">
+            <img src="./img/mobile-logo.png" alt="boolean logo" class="ms-3 logo-mobile d-lg-none">
+            <div class="input-group ms-5 ms-lg-3">
+                <span class="input-group-text border-end-0 bg_grey ps-2 " id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control border-start-0 bg_grey ps-0" placeholder="Prove a cercare: Lezioni di Laravel" aria-label="search" id="basic-addon1">
             </div>
-            <ul class="list-unstyled d-flex ">
-                <li><i class="fa-solid fa-list"></i></li>
-                <li><i class="fa-solid fa-circle-question"></i></li>
-                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                <li><i class="fa-solid fa-bell"></i></li>
+            <ul class="list-unstyled d-flex mt-3">
+                <li><i class="fa-solid fa-list d-none d-lg-block"></i></li>
+                <li><i class="fa-solid fa-circle-question d-none d-lg-block"></i></li>
+                <li><i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i></li>
+                <li><i class="fa-solid fa-bell d-block text_orange"></i></li>
             </ul>
         </header>
-        <main class="d-flex">
-            <div id="sidebar">
+        <main class="d-flex ">
+            <div id="sidebar" class="margint_75">
                 <div class="content d-flex flex-column justify-content-between text-white pt-4 align-items-center">
                     <ul class="list-unstyled">
                         <li><span class="py-2 me-3 "><i class="fa-solid fa-house"></i></span><span class="d-none d-lg-inline-block ">Home</span></li>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <div id="main-content">
+            <div id="main-content" class="margint_75 overflow-y-auto">
                 <div class="jumbo bg-primary text-white">
                     <div class="container-fluid">
                         <div class="row justify-content-between">
@@ -234,25 +234,26 @@
                                                 <li class="list-group-item">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                        Kickoff nuove classi
+                                                            Kickoff nuove classi
                                                     </div>
                                                 </li>
                                                 <li class="list-group-item">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                        Lezione su Bootstrap 5 in classe #75
+                                                            Lezione su Bootstrap 5 in classe #75
                                                     </div>
                                                 </li>
                                                 <li class="list-group-item">
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                        Controllare usurname github studenti
+                                                            Controllare usurname github studenti
                                                     </div>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
+                            </div>    
                             <div class="card-body">
                                 <div class="card">
                                     <div class="content-kitchen-sink p-3">    
